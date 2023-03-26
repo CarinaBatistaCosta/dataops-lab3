@@ -12,3 +12,10 @@ jobs:
       - name: Faer checkout da branch
         uses: actions/checkout@v2
 
+      - name: Deploy no CloudFormation
+        uses: aws-actions/aws-cloudformation-github-deploy@v1
+        with:
+        name: dataops-lab3
+        template: ec2-jenkins.yaml
+        parameter-overrides: "key=vockey,iamprofile=LabInstanceProfile"
+
