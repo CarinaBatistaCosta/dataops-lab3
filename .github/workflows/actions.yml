@@ -1,4 +1,4 @@
-name: 'Deply para AWS CloudFormation'
+name: 'Deploy para AWS CloudFormation'
 
 on:
   push:
@@ -12,4 +12,3 @@ jobs:
       - name: Faer checkout da branch
         uses: actions/checkout@v2
 
-        
