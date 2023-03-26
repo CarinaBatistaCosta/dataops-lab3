@@ -3,7 +3,7 @@ name: 'Deploy para AWS CloudFormation'
 on:
   push:
       branches: [main]
-workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   deploy:
