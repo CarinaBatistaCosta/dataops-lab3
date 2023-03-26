@@ -1,0 +1,15 @@
+name: 'Deply para AWS CloudFormation'
+
+on:
+  push:
+      branches: [main]
+workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Faer checkout da branch
+        uses: actions/checkout@v2
+
+        
